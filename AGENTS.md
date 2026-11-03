@@ -1,0 +1,3 @@
+# AgentHub working instructions
+
+Read SPECS.md, memory-bank/contexts, plans/build-plan.md, progress.md and decisions.md before work. Preserve the specs-first history. Use vanilla TypeScript and Tailwind CDN; no framework, runtime backend, custom CSS file or inline style. Keep typed data and reusable UI helpers separate. Compile and commit dist JavaScript so the public checkout runs with a static server. All sample data is fictional. Maintain concise progress/decisions after meaningful changes. Coordinate shared edits and use Git for history. Never claim a blocked Stitch generation or unrun browser check passed.
