@@ -5,7 +5,7 @@ An interactive six-section AI-agent rental admin panel for 4Geeks. Public reposi
 ## Run
 
 ```sh
-npm ci
+npm install
 npm run build
 npm start
 ```
@@ -14,7 +14,7 @@ Open http://localhost:4173. Committed dist modules also run without Node after c
 
 ## Assignment requirements
 
-SPECS.md was committed separately before index.html. This repo was created using 4GeeksAcademy/html-hello. The teacher explicitly replaced vanilla JavaScript/no-build-tools with **vanilla TypeScript and a compiler workflow**. There is no frontend framework or backend; all styling uses Tailwind CDN utilities. src/ contains typed source, dist/ contains tsc browser output.
+SPECS.md was committed separately before index.html. This repo was created using 4GeeksAcademy/html-hello. The teacher explicitly replaced vanilla JavaScript/no-build-tools with **vanilla TypeScript and a compiler workflow**. There is no frontend framework or backend; all styling uses Tailwind CDN utilities. src/ contains typed source, dist/ contains compiled browser JavaScript.
 
 Dashboard, Users, Agents, Skills, Contracts and Error Log are available through the persistent sidebar. Row menus open detail/configuration windows. Prompt edits, confirmed deletions and error resolution affect session state. Reset demo restores seed records. Theme persists when browser storage is available. Native dialogs support keyboard focus, Escape, close buttons and backdrop dismissal. Agent skill lists have reduced-motion-aware disclosure transitions.
 
