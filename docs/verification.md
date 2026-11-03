@@ -28,7 +28,7 @@ IAB forwarded-port sign-in stalled, so the rendered app was checked in native Di
 The generated concept is supplementary and is not falsely labeled a Google Stitch proposal. The committed spec is the implementation contract; intentional differences are documented in design-reference.md. No full pixel-perfect or WCAG-conformance claim is made.
 
 ## Remaining coursework and QA limits
-Full SPECS.md was entered into Google Stitch Web mode, but generation requires new Additional Terms of Service. Those were not accepted on the user's behalf. The actual Stitch design-generation/reference step remains pending. Final 4Geeks submission was not performed.
+Full SPECS.md was entered into Google Stitch Web mode. The user personally accepted the new terms, then a six-screen visual proposal and design system were generated and reviewed. Users and Skills were produced in a follow-up. See docs/design-reference.md and the linked Stitch project. Generation occurred after initial implementation because of the terms gate; no reversed chronology is claimed. Final 4Geeks submission was not performed.
 
 Backdrop click dismissal and content-click protection are implemented with pointerdown/click target checks; native coordinate testing failed to target a browser window, so this specific interaction is source-reviewed but not independently clicked. No app console inspection or actual screen-reader run was available in native Dia. Reduced-motion classes and focus handling are implemented; OS-preference simulation remains unverified. Deletion Cancel and all-record empty states are implemented but were not exhaustively tested in the rendered browser.
 

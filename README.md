@@ -22,6 +22,6 @@ All identities, companies, errors and prices are fictional; billing period is ex
 
 ## Design and verification
 
-See docs/design-reference.md and docs/verification.md. Full specs were supplied to Google Stitch; generation is blocked by its new Terms of Service acceptance. This remaining coursework step is explicitly tracked, not marked completed. Tailwind's development CDN warning is expected for the required prototype and does not establish production readiness.
+See docs/design-reference.md and docs/verification.md. Full specs were supplied to Google Stitch. After the user personally accepted its new terms, a visual proposal was generated and reviewed: https://stitch.withgoogle.com/projects/4129143407042673505 . See the design notes for chronology, retained patterns and rejected off-spec additions. Tailwind's development CDN warning is expected for the required prototype and does not establish production readiness.
 
 Template credit: [4GeeksAcademy/html-hello](https://github.com/4GeeksAcademy/html-hello).
