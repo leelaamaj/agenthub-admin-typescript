@@ -1,0 +1,7 @@
+# Design reference and provenance
+
+The complete committed SPECS.md was entered into Google Stitch in Web mode on 2026-11-03. Generate designs opened the signed-in application, which requires new Additional Terms of Service. These were not accepted on the user's behalf. No completed Stitch proposal is claimed. The pending prompt and terms gate are available in the browser.
+
+A supplementary generated overview concept was reviewed before HTML implementation. It follows the spec's ink sidebar, pale slate canvas, white panels, violet accents, four metric cards, explicit chart placeholder and two lower operational panels. All actual UI is semantic HTML and TypeScript, not a screenshot. The extra reusable-components showcase and invented Updated timestamps in the generated concept are intentionally omitted: they are design-reference artifacts outside the actual assignment requirements. Required icons are added to metric cards as specified. Full section names remain in page headings; short names remain in sidebar.
+
+Design tokens: sidebar slate-900, canvas slate-50, panel white, border slate-200, text slate-900, secondary slate-500, accent violet-600; 16px panel corners; 24px panel padding; 40px desktop gutter. Dark surfaces slate-950/slate-900, text slate-100/slate-400. System sans typography; 30px page title, 16px panel title, 14px body/table, 12px secondary. SVG icons use consistent 1.7px outline strokes. Tablet collapses sidebar labels into named icon navigation; cards reflow from four to two to one column.

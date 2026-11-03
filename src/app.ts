@@ -54,7 +54,7 @@ function agentsView(): string {
 function skillsView(): string {
   return heading('Skills','The capabilities that make every agent useful.',`${state.skills.length} available skills`)+
   `<div class="mb-6 flex items-start gap-3 rounded-xl border border-violet-100 bg-violet-50 p-4 text-sm leading-6 text-violet-900 dark:border-violet-900 dark:bg-violet-950/40 dark:text-violet-200">${icon('skills','mt-0.5 h-5 w-5 shrink-0')}<p>A <strong>skill</strong> is a capability you attach to an agent, such as researching the web or analyzing documents. One agent can use several skills.</p></div>`+
-  table(['Skill','Description','Enabled on','<span class="sr-only">Actions</span>'],state.skills.map(s=>`<tr>${cell(nameCell(s.name,s.id,s.icon))}${cell(e(s.description),'min-w-64 max-w-md '+muted)}${cell(`${state.agents.filter(a=>a.skills.includes(s.id)).length} agents`,'whitespace-nowrap')}${cell(menu('skill',s.id,s.name,[{label:'View detail',action:'detail'},{label:'Delete',action:'delete'}]))}</tr>`),'Skills');
+  table(['Skill','Description','Enabled on','<span class="sr-only">Actions</span>'],state.skills.map(s=>`<tr>${cell(nameCell(s.name,s.id,s.icon))}${cell(e(s.description),'min-w-64 max-w-md '+muted)}${cell(`${state.agents.filter(a=>a.skills.includes(s.id)).length} ${state.agents.filter(a=>a.skills.includes(s.id)).length===1?'agent':'agents'}`,'whitespace-nowrap')}${cell(menu('skill',s.id,s.name,[{label:'View detail',action:'detail'},{label:'Delete',action:'delete'}]))}</tr>`),'Skills');
 }
 function contractsView(): string {
   const total=state.contracts.reduce((s,c)=>s+contractTotal(c),0);
@@ -108,6 +108,7 @@ function openMenu(trigger: HTMLButtonElement): void {
   // Tailwind CDN observes generated utility classes; no inline style attributes.
   menuElement.classList.add(`left-[${Math.round(x)}px]`,`top-[${Math.round(y)}px]`);
   document.body.append(menuElement);trigger.setAttribute('aria-expanded','true');menuTrigger=trigger;
+  menuElement.querySelector<HTMLButtonElement>('button:not(:disabled)')?.focus({preventScroll:true});
 }
 function openModal(title:string,content:string): void {
   dialogOpener=document.activeElement instanceof HTMLElement?document.activeElement:null;
